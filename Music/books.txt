@@ -1,0 +1,10 @@
+Gone, Michael Grant, 576, Fiction
+Nineteen Eighty-Four, George Orwell, 328, Dystopian Fiction
+Outliers, Malcolm Gladwell, 320, Non-fiction
+Shantaram, Gregory David Roberts, 944, Fiction
+Becoming, Michelle Obama, 448, Autobiography
+The Hunger Games, Suzanne Collins, 374, Young Adult Fiction
+The Catcher, J.D. Salinger, 224, Fiction
+The Alchemist, Paulo Coelho, 208, Fiction
+The Girl with the Dragon Tattoo, Stieg Larsson, 672, Mystery
+The Road, Cormac McCarthy, 256, Post-apocalyptic Fiction
