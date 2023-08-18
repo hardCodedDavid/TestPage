@@ -2,109 +2,430 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impact bootstrap template</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+      .boy li a{
+        font-size: 16px;
+        padding: 10px 0px 10px 30px;
+      }
+
+      .dog{
+        padding: 8px 20px;
+        margin: 0px 0px 0px 30px;
+        font-size: 16px;
+        background-color: #0D42ff;
+        border-radius: 4px;
+        color: white;
+      }
+      
+      .cat{
+        padding: 27px 23px 33px 17px;
+        border-radius: 0.375rem;
+        font-weight: 450;
+        line-height: 1.5;
+        margin-right: -100px;
+        margin-top: -10px;
+      }
+
+      .bat{
+        margin: 5px 0px 13px -20px;
+        background-color:  #0D42ff;
+        padding: 15px 30px;
+        border-radius: 6px;
+        font-size: 16px;
+      }
+
+      .get{
+        margin: -24px -12px 0px;
+      }
+
+      .rat{
+        padding: 80px 0px;
+      }
+
+      .img-fluid{
+       width: 1800px;
+       height: 439px;
+       padding-left: 65px;
+      }
+      
+      .van{
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700;
+        color: #001973;
+        margin-top: -43px;
+      }
+
+      .mat{
+        text-align: center;
+        font-size: 55px;
+        color: #001973;
+        opacity: 0.03;
+        margin-top: 90px;
+        line-height: 40%;
+      }
+
+      .fluid{
+        background: linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url(./Logis/assets/img/cta-bg.jpg) center center;
+        background: cover;
+        padding-bottom: 100px;
+        height: 400px;
+        width: 1580px;
+      }
+      
+      .eat{
+        margin-top: 0px;
+        margin-bottom: 1rem;
+        padding-left: 444px;
+        padding-right: 356px;
+        color: white;
+      }
+
+      .wet{
+        margin-top: -293px;
+      }
+
+      .xat{
+        font-family: var(--font-primary);
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 12px 40px;
+        border-radius: 5px;
+        transition: 0.5s;
+        margin: 10px;
+        border: 2px solid #fff;
+        color: #fff;
+      }
+    </style>
 </head>
-<body class="dog" style="font-family: 'Montserrat', sans-serif;">
-    <section class="mat">
-        <div class="cat">
-        <a href="/impact.html" class="Impact">Impact<span style="color: orange;">.</span></a>
+<body>
+  <section style="background-color: #0e1d34; background-image: url('./Logis/assets/img/hero-bg.png'); background-size: cover;">
+   <section style=" max-width: 1200px; margin:auto;">
+    <nav class="navbar navbar-expand-lg d-flex justify-content-end pb-2">
+     <div class="container-fluid">
+        <ul class="navbar-nav me-auto mb-2 mt-3 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active fs-2 text-white font-primary" aria-current="page" href="#" style="font-weight: 700; margin-left: -79px">Logis</a>
+          </li>
+        </ul>
         </div>
-        <div class="rat">
-        <nav class="links">
-            <a href="/home.html" class="Home">Home</a>
-            <a href="/about.html" class="About">About</a>
-            <a href="/services.html" class="Services">Services</a>
-            <a href="/portfolio.html" class="Portfolio">Portfolio</a>
-            <a href="/team.html" class="Team">Team</a>
-            <a href="/blog.html" class="Blog">Blog</a>
-            <a href="/dropdown.html" class="Dropdown">Dropdown</a>
-            <a href="/contact.html" class="contact">Contact</a>
-        </nav>
-        <nav class="link">
-            <i class="fa-sharp fa-solid fa-bars" style="margin-right: -50px; margin-top: -3px; font-size: 40px; color: #ffffff8a;;"></i>
-        </nav>
-        </div>
+        <div class="d-flex justify-content-end">
+          <ul class="navbar-nav me-auto mb-2 mt-3 mb-lg-0 boy">
+            <li class="nav-item" >
+              <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-secondary" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#" aria-current="page">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Drop down
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li class="dropdown-submenu">
+                  <li><a class="dropdown-item" href="#">Drop down 1</a></li>
+                  <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Nested Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="nestedDropdown">
+                    <li><a class="dropdown-item" href="#">Drop down 1</a></li>
+                    <li><a class="dropdown-item" href="#">Drop down 2</a></li>
+                  </ul>
+                <li><a class="dropdown-item" href="#">Drop down 2</a></li>
+                <li><a class="dropdown-item" href="#">Drop down 3</a></li>
+                <li><a class="dropdown-item" href="#">Drop down 4</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">Contact</a>
+            </li>
+            <button type="button" class="btn btn-primary text-nowrap ms-2 dog">Get a Quote</button>            
+          </ul>
+          </ul>
+          </div>
+      </nav>
     </section>
 
-    <section class="zat">
-        <div class="sat">
-            <h2>Welcome to Impact</h2>
-            <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
-            
-            <div class="rag">
-                <div class="wet">
-                    <a href="/getstarted.html" class="GetStarted" style=" border: 1px solid #7ccac1; padding: 16px 40px;border-radius: 30px; background-color: #ffffff21">Get Started</a>
-                </div>
-                <div class="nag">
-                    <div class="goat">
-                        <i class="fa-solid fa-circle-play" style="margin-left: 20px; font-size: 45px; color: #ffffff8a; margin-top: -13px"></i>
-                    </div>
-                    <div class="cam">
-                        <a href="/watchvideo.html" class="Watchvideo">Watch Video</a> 
-                    </div>
-                </div>
-            </div>
-        </div>
-            <div class="not">
-                <img src="./assets/img/hero-img.svg">
-            </div>
-    </section>
 
-    <section class="ram">
-        <div class="bat">
-        <div class="a">
-            <i class="fa-regular fa-gem" style="margin: 0 auto 20px auto; font-size: 40px; color: #ffffff8a"></i>
-        <a href="/LoremIpsum.html" class="LoremIpsum">Lorem Ipsum</a>
+
+
+
+    <section style="max-width: 1200px; margin:auto;" class="container-fluid">
+      <div class="d-flex">
+        <div class="" style="margin-top: 20px; margin-left: -74px; margin-right: 131px;">
+          <h2 class="text-white ps-2 pt-2" style="font-size: 50px; font-weight: 700;">Your Lightning Fast Delivery Partner</h2>
+          <p class="$gray-100 ps-2 pt-2" style="color: #adb5bd;">Facere distinctio molestiae nisi fugit tenetur repellat non praesentium nesciunt optio quis sit odio nemo quisquam. eius quos reiciendis eum vel eum voluptatem eum maiores eaque id optio ullam occaecati odio est possimus vel reprehenderit</p>
+          <div class="container mt-5">
+            <form class="form-search mb-3 d-flex">
+              <input type="text" class="form-control cat" placeholder="ZIP code or CitY" aria-label="Recipient's username" >
+              <button type="submit" class="btn btn-primary btn-lg bat">Search</button>
+            </form>
+            <div class="container">
+              <div class="row mb-3 mt-5 ms-2">
+                <div class="col order-1 fs-2 pb-2 ps-4" style="font-weight: 700; color:#ffffffd0">
+                  232 
+                  <div class="mt-3" style=" background-color: #0D42ff; padding: 1px; margin-top: 20px; width: 21px; margin-left: 13px;"></div>
+                  <p style="font-size: 15px;" class="pt-3">Clients</p>
+                </div>
+                <div class="col order-2 fs-2 ps-5" style="font-weight: 700; color:#ffffffd0">
+                  521
+                <div class="mt-3" style=" background-color: #0D42ff; padding: 1px; margin-top: 20px; width: 21px; margin-left: 15px;"></div>
+                <p style="font-size: 15px;" class="pt-3">Projects</p>
+                </div>
+                <div class="col order-3 fs-2 ps-5" style="font-weight: 700; color:#ffffffd0;">
+                   1452
+                  <div class="mt-3" style=" background-color: #0D42ff; padding: 1px; margin-top: 20px; width: 21px; margin-left: 26px;"></div>
+                  <p style="font-size: 15px; margin-left: 8px" class="pt-3">Support</p>
+                </div>
+                <div class="col order-4 fs-2 ps-5" style="font-weight: 700; color:#ffffffd0">
+                    32
+                  <div class="mt-3" style=" background-color: #0D42ff; padding: 1px; margin-top: 20px; width: 21px; margin-left: 10px;"></div>
+                  <p style="font-size: 15px; margin-left: -6px;" class="pt-3">Workers</p>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        <div class="mt-5">
+          <img src="./Logis/assets/img/hero-img.svg" alt="Flowers in Chania" width="520px" height="655px" style="margin-top: -126px;">
+
         </div>
-        <div class="b">
-            <i class="fa-regular fa-gem" style="margin: 0 auto 20px auto; font-size: 40px; color: #ffffff8a;"></i>
-        <a href="/Sed ut perspiciatis.html" class="Sedutperspiciatis">Sed ut perspiciatis</a>
-        </div>
-        <div class="c">
-            <i class="fa-sharp fa-solid fa-location-dot" style="margin: 0 auto 20px auto; font-size: 40px; color: #ffffff8a;"></i>
-        <a href="/MagniDolores.html" class="MagniDolores">Magni Dolores</a>
-        </div>
-        <div class="d">
-            <i class="fa-sharp fa-solid fa-map-location-dot" style="margin: 0 auto 20px auto; font-size: 40px; color: #ffffff8a;;"></i>
-        <a href="/NemoEnim.html" class="NemoEnim">Nemo Enim</a>
-        </div>
-        </div>
+      </div>
+     </div>
     </section>
-    <div>
-    <main class="cot">
-        <div class="cow">
-        <h3>About Us</h3>
-        <p>Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop</p>
+  </section>
+  </section>
+
+  <section class="rat"> 
+    <div class="container d-flex justify-content-between">
+      <div class="get"  style="margin-left: 50px;">
+        <a href="#" class="fs-5 text-decoration-none text-reset" style="margin-left: -62px;"><svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" style="color: #0D42ff;" class="bi bi-cart" viewBox="0 0 16 16">
+  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+</svg>   <strong>Lorem Ipsum</strong></a>
+        <p style="padding-right: 189px;">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+        <a href="#" class="text-decoration-none text-reset"><strong>Learn More</strong>  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+        </svg></a>
+      </div>
+
+      <div class="get">
+        <a href="#" class="fs-5 text-decoration-none text-reset" style="margin-left: -62px;"><svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-truck" style="color: #0D42ff;"  viewBox="0 0 16 16">
+          <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+        </svg>    <strong>Dolor Sitema</strong></a>
+        <p style="padding-right: 134px;">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+        <a href="#" class="text-decoration-none text-reset"><strong>Learn More</strong>  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+        </svg></a>
+        </div>
+
+      <div class="get">
+        <a href="#" class="fs-5 text-decoration-none text-reset" style="margin-left: -62px;"><svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-cart-dash" style="color: #0D42ff;" viewBox="0 0 16 16">
+          <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+          <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+        </svg>    <strong>Sed ut perspiciatis</strong></a>
+        <p style="padding-right: -10px;">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+        <a href="#" class="text-decoration-none text-reset"><strong>Learn More</strong>  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+        </svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container  d-flex  justify-content-between">
+      <div>
+        <h2 class="" style="color: #001f8D;"><strong>About us</strong></h2>
+        <p style="padding-right: 12px; padding-bottom: 18px;">Dolor iure expedita id fuga asperiores qui sunt consequatur minima. Quidem voluptas deleniti. Sit quia molestiae quia quas qui magnam itaque veritatis dolores. Corrupti totam ut eius incidunt reiciendis veritatis asperiores placeat.</p>
+        <h5 style="margin-top: 26px;" 26px;><svg xmlns="http://www.w3.org/2000/svg" style="color: #0D42ff; margin-bottom: -14px;" width="46" height="46" fill="currentColor" class="bi bi-bezier" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M0 10.5A1.5 1.5 0 0 1 1.5 9h1A1.5 1.5 0 0 1 4 10.5v1A1.5 1.5 0 0 1 2.5 13h-1A1.5 1.5 0 0 1 0 11.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm10.5.5A1.5 1.5 0 0 1 13.5 9h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM6 4.5A1.5 1.5 0 0 1 7.5 3h1A1.5 1.5 0 0 1 10 4.5v1A1.5 1.5 0 0 1 8.5 7h-1A1.5 1.5 0 0 1 6 5.5v-1zM7.5 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/>
+          <path d="M6 4.5H1.866a1 1 0 1 0 0 1h2.668A6.517 6.517 0 0 0 1.814 9H2.5c.123 0 .244.015.358.043a5.517 5.517 0 0 1 3.185-3.185A1.503 1.503 0 0 1 6 5.5v-1zm3.957 1.358A1.5 1.5 0 0 0 10 5.5v-1h4.134a1 1 0 1 1 0 1h-2.668a6.517 6.517 0 0 1 2.72 3.5H13.5c-.123 0-.243.015-.358.043a5.517 5.517 0 0 0-3.185-3.185z"/>
+        </svg>  Ullamco laboris nisi ut aliquip consequat</h5>
+        <p style="padding-left: 53px;  margin-top: -10px; margin-botton: -20px;">Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+        <h5 style="margin-top: 26px;"><svg xmlns="http://www.w3.org/2000/svg" style="color: #0D42ff; margin-bottom: -32px;" width="46" height="46" fill="currentColor" class="bi bi-fullscreen-exit" viewBox="0 0 16 16">
+          <path d="M5.5 0a.5.5 0 0 1 .5.5v4A1.5 1.5 0 0 1 4.5 6h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5zm5 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 10 4.5v-4a.5.5 0 0 1 .5-.5zM0 10.5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 6 11.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zm10 1a1.5 1.5 0 0 1 1.5-1.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4z"/>
+        </svg>   Magnam soluta odio exercitationem reprehenderi</h5>
+        <p style="padding-left: 53px;  margin-top: -8px">Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
+        <h5 style="margin-top: 26px;"><svg xmlns="http://www.w3.org/2000/svg" style="color: #0D42ff; margin-bottom: -19px;" width="46" height="46" fill="currentColor" class="bi bi-volume-up" viewBox="0 0 16 16">
+          <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
+          <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
+          <path d="M10.025 8a4.486 4.486 0 0 1-1.318 3.182L8 10.475A3.489 3.489 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.486 4.486 0 0 1 10.025 8zM7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12V4zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11z"/>
+        </svg>   Voluptatem et qui exercitationem</h5>
+        <p style="padding-left: 53px;  margin-top: -6px">Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p>
+      </div>
+      <div>
+        <img src="./Logis/assets/img/about.jpg" alt="blowers" class="img-fluid">
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div>
+        <p class="mat"><strong>OUR SERVICES</strong></p>
+        <h2 class="van">OUR SERVICES</h2>
+        <div class="mt-3" style=" background-color: #0D42ff; padding: 2px; text-align: center; margin-top: 20px; width: 58px; margin-left: 626px;"></div>
+      </div>
+
+      <div class="d-flex justify-content-between mt-5">
+       <div class="card" style="width: 417px;">
+        <a href="#"><img src="./Logis/assets/img/storage-service.jpg" class="card-img-top" alt="storage"></a>
+        <div class="card-body">
+          <a href="#" class="card-title fs-5 ms-3" style="color:#001973; text-decoration: none;"><strong>ST0RAGE</strong></a>
+          <a href="#" style="color: inherit; text-decoration: none;"><p class="card-text mt-3 mb-3 ms-3">Cumque eos in qui numquam. Aut aspernatur perferendis sed atque quia voluptas quisquam repellendus temporibus itaqueofficiis odit</p></a>
+       </div>
+      </div>
+
+       <div class="card" style="width: 417px;">
+        <a href="#"><img src="./Logis/assets/img/page-header.jpg" style="width: 417px; height: 313px;" class="card-img-top" alt="storage"></a>
+        <div class="card-body">
+         <a href="#" class="card-title fs-5 ms-3" style="color:#001973; text-decoration: none;"><strong>LOGISTICS</strong></a>
+         <a href="#" style="color: inherit; text-decoration: none;"><p class="card-text mt-3 mb-3 ms-3">Asperiores provident dolor accusamus pariatur dolore nam id audantium ut et iure incidunt molestiae dolor ipsam ducimus occaecati nisi</p></a>
+     </div>
     </div>
 
-    <section  class="mind">
-        <div class="join">
-        <h4>Voluptatem dignissimos provident quasi corporis</h4>
-            <img src="./assets/img/about.jpg" alt="about 1">
-        <p>Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et. Placeat debitis quia recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.
-            Temporibus nihil enim deserunt sed ea. <br><br>Provident sit expedita aut cupiditate nihil vitae quo officia vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus.
-            </p>
-        </div>
-       <div class="work">
-        <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i><br><br>
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>
-            Duis aute irure dolor in reprehenderit in voluptate velit.<br><br>
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.<br><br>
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
-            <ul class="images">
-                <li><img src="./assets/img/about-2.jpg" alt="about 2"></li>
-            </ul>
-        </div>
-    </div>
-    </main>
+      <div class="card" style="width: 417px;">
+        <a href="#"><img src="./Logis/assets/img/cargo-service.jpg" class="card-img-top" alt="storage"></a>
+        <div class="card-body">
+          <a href="#" class="card-title fs-5 ms-3" style="color:#001973; text-decoration: none;"><strong>CARGO</strong></a>
+          <a href="#" style="color: inherit; text-decoration: none;"><p class="card-text mt-3 mb-3 ms-3">Dicta quam similique quia architecto eos nisi aut ratione aut ipsum reiciendis sit doloremque oluptatem aut et molestiae ut et nihil</p></a>
+       </div>
+      </div>
+     </div>
 
+     <div class="d-flex justify-content-between mt-4">
+      <div class="card" style="width: 417px;">
+       <a href="#"><img src="./Logis/assets/img/trucking-service.jpg" class="card-img-top" alt="storage"></a>
+       <div class="card-body">
+         <a href="#" class="card-title fs-5 ms-3" style="color:#001973; text-decoration: none;"><strong>TRUCKING</strong></a>
+         <a href="#" style="color: inherit; text-decoration: none;"><p class="card-text mt-3 mb-3 ms-3">Dicta quam similique quia architecto eos nisi aut ratione aut ipsum reiciendis sit doloremque oluptatem aut et molestiae ut et nihil</p></a>
+      </div>
+     </div>
+
+      <div class="card" style="width: 417px;">
+       <a href="#"><img src="./Logis/assets/img/packaging-service.jpg" class="card-img-top" alt="storage"></a>
+       <div class="card-body">
+        <a href="#" class="card-title fs-5 ms-3" style="color:#001973; text-decoration: none;"><strong>PACKAGING</strong></a>
+        <a href="#" style="color: inherit; text-decoration: none;"><p class="card-text mt-3 mb-3 ms-3">Illo consequuntur quisquam delectus praesentium modi dignissimos facere vel cum onsequuntur maiores beatae consequatur magni voluptates
+
+        </p></a>
+    </div>
+   </div>
+
+     <div class="card" style="width: 417px;">
+       <a href="#"><img src="./Logis/assets/img/warehousing-service.jpg" class="card-img-top" alt="storage"></a>
+       <div class="card-body">
+         <a href="#" class="card-title fs-5 ms-3" style="color:#001973; text-decoration: none;"><strong>WAREHOUSING</strong></a>
+         <a href="#" style="color: inherit; text-decoration: none;"><p class="card-text mt-3 mb-3 ms-3">Quas assumenda non occaecati molestiae. In aut earum sed natus eatae in vero. Ab modi quisquam aut nostrum unde et qui est non quo nulla</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="text-center">
+      <div class="mt-5 fluid">
+      </div>
+      <div class="wet">
+        <h3 class="text-center" style="color: white; font-size: 30px; font-weight: 700;">Call To Action</h3>
+        <p class="eat text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <button type="button" class="btn btn-lg xat">Call To Action</button>
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-top: 200px;">
+    <div class="container d-flex justify-content-between">
+      <div>
+        <img src="./Logis/assets/img/features-1.jpg" style="height: 355.13px; width: 531px; margin-left: 30px" alt="image">
+      </div>
+    
+      <div class="ms-4 mt-5">
+        <h5 style="font-weight: 600; font-size: 27px; color: #001973;">Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h5>
+        <p style="font-style: italic;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16" style="color: #0D42ff;">
+          <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+        </svg>   Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: #0D42ff;" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+          <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+        </svg>  Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: #0D42ff;" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+          <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+        </svg>   Ullam est qui quos consequatur eos accusamus.</p>
+
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-top: 140px;">
+    <div class="container d-flex justify-content-between mt-5">
+      <div style="margin-left: -30px; padding-left: 50px; margin-top: 80px;" >
+        <h4 style="font-weight: 600; font-size: 28px; color: #001973;">Corporis temporibus maiores provident</h4>
+        <p class="fst-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      </div>
+      <div>
+        <img src="./Logis/assets/img/features-2.jpg" style="height: 355.13px; width: 531px; margin-left: 80px" alt="image">
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-top: 140px;">
+    <div class="container d-flex justify-content-between mt-5">
+      <div>
+        <img src="./Logis/assets/img/features-3.jpg" style="height: 355.13px; width: 531px; margin-left: 30px" alt="image">
+      </div>
+
+      <div class="ms-4 mt-5">
+        <h4 style="font-weight: 600; font-size: 27px; color: #001973;">Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h4>
+        <p class="fst-italic">Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16" style="color: #0D42ff;">
+          <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+        </svg>  Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16" style="color: #0D42ff;">
+          <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+        </svg>  Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16" style="color: #0D42ff;">
+          <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+        </svg> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-top: 140px;">
+    <div class="container d-flex justify-content-between mt-5">
+      <div>
+        <div style="margin-left: -30px; padding-left: 50px; margin-top: 80px;">
+          <h4 style="font-weight: 600; font-size: 27px; color: #001973;">Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h4>
+          <p class="fst-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+      </div>
+
+      <div>
+        <img src="./Logis/assets/img/features-4.jpg" style="height: 355.13px; width: 531px; margin-left: 80px" alt="image">
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div>
+        <p class="mat"><strong>PRICING</strong></p>
+        <h2 class="van">PRICING</h2>
+        <div class="mt-3" style=" background-color: #0D42ff; padding: 2px; text-align: center; margin-top: 20px; width: 58px; margin-left: 626px;"></div>
+      </div>
+    </div>
+  </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
-<script src="https://kit.fontawesome.com/15923e6969.js" crossorigin="anonymous"></script>
 </html>
